@@ -188,6 +188,30 @@
     }
 
     /* ── X FOLLOW BUTTON ── */
+
+    .tools-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 13px 28px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--gold);
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+      letter-spacing: 0.01em;
+      animation: fadeUp 1s ease both 0.65s;
+    }
+
+    .tools-btn:hover {
+      background: rgba(212,168,75,0.06);
+      border-color: var(--gold);
+    }
+
     .x-follow-wrap {
       margin-top: 20px;
       animation: fadeUp 1s ease both 0.7s;
@@ -494,6 +518,11 @@
     </form>
     <p class="form-note">Free. Every Friday. Unsubscribe anytime.</p>
 
+    <a class="tools-btn" href="https://tools.automotivist.com" target="_blank" rel="noopener">
+      <svg style="width:15px;height:15px;fill:currentColor;flex-shrink:0;" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+      Run the numbers free
+    </a>
+
     <div class="x-follow-wrap" style="display:flex;flex-direction:column;align-items:center;gap:14px;">
       <a class="x-follow-btn" href="https://x.com/_automotivist" target="_blank" rel="noopener">
         <svg class="x-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -576,7 +605,6 @@
 <footer>
   <span class="footer-brand">The Automotivist</span>
   <div class="footer-links">
-    <a href="https://automotivist.beehiiv.com/archive" target="_blank">Newsletter Archive</a>
     <a href="https://tools.automotivist.com" target="_blank">Car Math Tools</a>
     <a href="https://x.com/_automotivist" target="_blank">
       <svg style="width:13px;height:13px;fill:currentColor;vertical-align:middle;margin-right:5px;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>@_automotivist
